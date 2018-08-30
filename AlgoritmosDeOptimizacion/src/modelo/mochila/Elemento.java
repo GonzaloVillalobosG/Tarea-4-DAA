@@ -47,9 +47,6 @@ public class Elemento {
         return true;
     }
  
-    @Override
-    public String toString(){
-        return "Peso:"+peso+","+" beneficio:"+beneficio;
-    }
+    
 	
 }
