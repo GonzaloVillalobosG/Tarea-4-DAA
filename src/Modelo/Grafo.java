@@ -32,18 +32,37 @@ public class Grafo {
 		GMatriz[i][j]=-1;
 	}
 	
-	public void matriz_azar() {
+	public void matriz_azar_sin_ciclos() {
 		for(int i=0;i<this.n;i++) {
 			for(int j=0;j<this.n;j++) {
-				GMatriz[i][j] = new Random().nextInt(10);
+				if(i==j) {
+					GMatriz[i][j] = 0;
+				}else{
+					GMatriz[i][j] = new Random().nextInt(10);
+				}
 			}
 		}
 		for(int i=0;i<this.n;i++) {
 			for(int j=0;j<this.n;j++) {
-				System.out.println(GMatriz[i][j]);
+				System.out.print(GMatriz[i][j]+" ");
 			}
+			System.out.println("");
 		}
-		
 	}
+
+	/**
+	 * @return the n
+	 */
+	public int getN() {
+		return n;
+	}
+
+	/**
+	 * @return the gMatriz
+	 */
+	public int[][] getGMatriz() {
+		return GMatriz;
+	}
+	
 
 }
