@@ -34,9 +34,6 @@ public class TestSimplex {
 		System.out.println("\n -- Ingrese numero de restricciones. --\n ");
 		restricciones = teclado.nextInt();
 		
-		System.out.println("\n -- Ingrese 1 para Maximizar o 2 para minimizar. --\n ");
-		objetivo = teclado.nextInt();
-		
 		matriz_funcion_objetivo = new double [variables];
 		
 		//solicitar
@@ -75,10 +72,7 @@ public class TestSimplex {
 		}
 		
 		//imprimir
-		
-		if(objetivo==1) {
-			System.out.print("Max Z = ");
-		}
+		System.out.println("Max Z: ");
 		for(int construir_matriz=0; construir_matriz<variables; construir_matriz++) {
 			System.out.print(matriz_funcion_objetivo[construir_matriz]+"X"+(construir_matriz+1));
 			
