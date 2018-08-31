@@ -3,9 +3,8 @@
  */
 package Test;
 
-import org.junit.jupiter.api.Test;
-
-import Modelo.Grafo;
+import org.junit.Test;
+import modelo.Grafo;
 
 /**
  * @author juan_

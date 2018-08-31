@@ -3,10 +3,9 @@
  */
 package Test;
 
-import org.junit.jupiter.api.Test;
-
-import Modelo.Dijkstra;
-import Modelo.Grafo;
+import org.junit.Test;
+import modelo.Dijkstra;
+import modelo.Grafo;
 
 /**
  * @author juan_
